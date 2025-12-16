@@ -1,7 +1,10 @@
-# code-translate
+# Translate Dict
+
+based on [Code Translate](https://github.com/w88975/code-translate-vscode),
 
 ## 简介
-vscode 滑词 & 悬浮 翻译插件
+
+vscode 滑词 & 悬浮 翻译插件 (Translate Dict)
 
 ## 预览
 
@@ -11,15 +14,15 @@ vscode 滑词 & 悬浮 翻译插件
 
 ## Source
 
-Github: [w88975/code-translate-vscode](https://github.com/w88975/code-translate-vscode)
+Github: [fengzai6/code-translate-vscode](https://github.com/fengzai6/code-translate-vscode)
 
-----
+---
 
 ## License
 
 MIT License
 
-Copyright (c) [2020] [w88975]
+Copyright (c) [2020] [w88975，fengzai6]
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
