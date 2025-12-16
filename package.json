@@ -36,11 +36,11 @@
   "scripts": {
     "lint": "eslint .",
     "pretest": "npm run lint",
-    "publish": "vsce package",
+    "package": "vsce package --allow-star-activation",
     "update": "node ./scripts/update-dict.js",
     "count": "node ./scripts/count-dict.js",
     "build:web": "webpack",
-    "build": "webpack && vsce package",
+    "build": "webpack && npm run package",
     "test:web": "npx vscode-test-web --browserType=chromium --extensionDevelopmentPath=. ./dist/web/extension.js",
     "test": "node ./test/runTest.js"
   },
