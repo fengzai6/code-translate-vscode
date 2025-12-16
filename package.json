@@ -40,6 +40,7 @@
     "update": "node ./scripts/update-dict.js",
     "count": "node ./scripts/count-dict.js",
     "build:web": "webpack",
+    "build": "webpack && vsce package",
     "test:web": "npx vscode-test-web --browserType=chromium --extensionDevelopmentPath=. ./dist/web/extension.js",
     "test": "node ./test/runTest.js"
   },
