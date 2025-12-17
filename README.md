@@ -3,6 +3,7 @@
 [![Version](https://img.shields.io/visual-studio-marketplace/v/fengzai6.translate-dict?style=flat-square&logo=visual-studio-code)](https://marketplace.visualstudio.com/items?itemName=fengzai6.translate-dict)
 ![Installs](https://img.shields.io/visual-studio-marketplace/i/fengzai6.translate-dict?style=flat-square)
 ![Downloads](https://img.shields.io/visual-studio-marketplace/d/fengzai6.translate-dict?style=flat-square)
+![Open VSX Downloads](https://img.shields.io/open-vsx/dt/fengzai6/translate-dict)
 ![Rating](https://img.shields.io/visual-studio-marketplace/r/fengzai6.translate-dict?style=flat-square)
 ![GitHub Repo stars](https://img.shields.io/github/stars/fengzai6/code-translate-vscode?style=flat-square&logo=github)
 [![The MIT License](https://img.shields.io/badge/license-MIT-orange.svg?style=flat-square)](http://opensource.org/licenses/MIT)
@@ -20,6 +21,12 @@ Translate Dict 是一款基于 Code Translate 的纯粹滑词翻译软件。
 4. 基于丰富的本地词库: Translate Dict 拥有超快的查询速度, 每个单词在基本在 10ms 内可查询完毕
 
 5. 多端支持: VS Code 桌面版 和 VS Code Online 版本, 插件均可支持
+
+# TODO：
+
+1. 完善 ts 迁移，思考 vite 的必要性，还是直接 rollup 即可
+2. 完善测试
+3. workflow
 
 ---
 

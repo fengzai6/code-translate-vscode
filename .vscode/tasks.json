@@ -1,0 +1,54 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "type": "npm",
+      "script": "build",
+      "group": "build",
+      "label": "npm: build",
+      "presentation": {
+        "group": "build",
+        "reveal": "silent"
+      }
+    },
+    {
+      "type": "npm",
+      "script": "dev",
+      "group": "build",
+      "isBackground": true,
+      "problemMatcher": [
+        {
+          "owner": "typescript",
+          "pattern": {
+            "regexp": "^([^\\s].*)\\((\\d+),(\\d+)\\):\\s+(error|warning|info)\\s+(TS\\d+)\\s*:\\s*(.*)$",
+            "file": 1,
+            "line": 2,
+            "column": 3,
+            "severity": 4,
+            "code": 5,
+            "message": 6
+          },
+          "background": {
+            "activeOnStart": true,
+            "beginsPattern": "^rollup v",
+            "endsPattern": "waiting for changes\\.\\.\\.$"
+          }
+        }
+      ],
+      "label": "npm: dev",
+      "presentation": {
+        "group": "build",
+        "reveal": "never"
+      }
+    },
+    {
+      "type": "npm",
+      "script": "test-compile",
+      "group": "build",
+      "label": "npm: test-compile",
+      "presentation": {
+        "reveal": "never"
+      }
+    }
+  ]
+}
