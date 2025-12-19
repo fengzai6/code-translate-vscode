@@ -110,5 +110,27 @@ describe("format", () => {
       const results = parseAndQuery("user123");
       expect(results.map((r) => r.word)).toEqual(["user"]);
     });
+
+    it("应该优先查询带连字符的完整单词", () => {
+      // ad-hocracy 在词典中是完整词条
+      const results = parseAndQuery("ad-hocracy");
+      expect(results.length).toBe(1);
+      expect(results[0].word).toBe("ad-hocracy");
+      expect(results[0].result?.w).toBe("ad-hocracy");
+    });
+
+    it("应该处理词典中不存在的连字符单词", () => {
+      // foo-bar 不在词典中，应该拆分
+      const results = parseAndQuery("foo-bar");
+      expect(results.map((r) => r.word)).toEqual(["foo", "bar"]);
+    });
+
+    it("应该优先查询带空格的完整词组", () => {
+      // Xuan paper 在词典中是完整词条
+      const results = parseAndQuery("Xuan paper");
+      expect(results.length).toBe(1);
+      expect(results[0].word).toBe("Xuan paper");
+      expect(results[0].result?.w).toBe("Xuan paper");
+    });
   });
 });
