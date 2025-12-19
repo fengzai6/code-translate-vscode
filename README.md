@@ -14,7 +14,13 @@ Translate Dict 是一款基于 Code Translate 的纯粹滑词翻译软件。
 
 1. 无侵入式的显示翻译结果: 与 VS Code 代码分析完美结合
 
-2. 强大的单词拆分能力: 支持驼峰, 下划线形式等各种单词拆分
+2. 强大的单词拆分能力:
+
+   - 支持驼峰、帕斯卡、下划线、连字符等多种命名格式
+   - 智能识别组合词（如 `audioinput` → `audio` + `input`）
+   - 正确处理连续大写字母（如 `HTTPServer` → `HTTP` + `Server`）
+   - 自动过滤单字母前缀（如 `IUser` → `User`）
+   - 多种大小写变体匹配，支持缩写形式（如 `Ht` 匹配 `Ht.`）
 
 3. 丰富的本地词库: 包含 76 万+离线单词 (约 63.93 MB), 支持各种生僻单词, 单词来源：[ECDICT](https://github.com/skywind3000/ECDICT)
 
@@ -50,8 +56,8 @@ Translate Dict 是一款基于 Code Translate 的纯粹滑词翻译软件。
 
 - [x] 允许 ignore 文件 或者 include 文件
 - [x] 添加全局开关快速启用/禁用翻译
+- [x] 尝试拆分类似 audioinput 这种组合词
 - [ ] 中译英
-- [ ] 尝试拆分类似 audioinput 这种组合词
 - [ ] 自定义跳转翻译平台
 
 ## 预览

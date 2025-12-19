@@ -92,6 +92,7 @@
     }
   },
   "scripts": {
+    "dev": "rollup -c -w",
     "lint": "eslint . --ext .ts",
     "type-check": "tsc --noEmit",
     "pretest": "yarn lint && yarn type-check",

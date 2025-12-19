@@ -4,6 +4,25 @@ All notable changes to the "code-translate" extension will be documented in this
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+## [1.2.0] - 2025-12-19
+
+### 新功能
+
+- feat: 文件扩展名过滤配置
+- feat: 全局翻译开关和右键菜单
+
+### 重构
+
+- refactor: 重构单词拆分和查询逻辑，合并为 `parseAndQuery` 一步完成
+- refactor: 优化词典查询，支持多种大小写变体匹配（原文 → 小写 → 首字母大写 → 缩写形式 → 全大写）
+
+### 改进
+
+- improve: 改进连续大写字母处理，如 `HTTPServer` → `["HTTP", "Server"]`
+- improve: 改进单字母前缀处理，如 `IHTTPService` → `["HTTP", "Service"]`（自动过滤单字母）
+- improve: 支持缩写形式匹配，如 `Ht` 可匹配到 `Ht.`
+- improve: 保留原始大小写进行查询，提高匹配准确性
+
 ## [1.1.2] - 2025-12-18
 
 - Migrate: Build with rollup+typescript，Reduce the packing volume

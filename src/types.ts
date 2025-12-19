@@ -1,12 +1,16 @@
 /**
  * 词典查询结果
  */
-export interface DictResult {
-  /** 翻译内容 */
-  w: string;
-  /** 音标 */
-  p: string;
-}
+export type DictResult =
+  | {
+      /** 单词 */
+      w: string;
+      /** 音标 */
+      p?: string;
+      /** 翻译 */
+      t: string;
+    }
+  | undefined;
 
 /**
  * 词典条目
